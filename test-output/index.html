@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,6 +118,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-RestAPITest_Suite" title="Com.HelloFresh.RestAPIHelloFresh" class="method navigator-link" hash-for-method="testGB(http://services.groupkt.com/country/get/iso2code/GB)">testGB(http://services.groupkt.com/country/get/iso2code/GB)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAPITest_Suite" title="Com.HelloFresh.RestAPIHelloFresh" class="method navigator-link" hash-for-method="testIndia(http://services.groupkt.com/country/get/iso2code/IN)">testIndia(http://services.groupkt.com/country/get/iso2code/IN)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -182,6 +187,14 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testIndia(http://services.groupkt.com/country/get/iso2code/IN)">
+                  </a> <!-- testIndia(http://services.groupkt.com/country/get/iso2code/IN) -->
+                  <span class="method-name">testIndia</span>
+                  <span class="parameters">(http://services.groupkt.com/country/get/iso2code/IN)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testUSA(http://services.groupkt.com/country/get/iso2code/US)">
                   </a> <!-- testUSA(http://services.groupkt.com/country/get/iso2code/US) -->
                   <span class="method-name">testUSA</span>
@@ -209,6 +222,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;RestAPITest Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;API Test&quot;&gt;
+    &lt;parameter name=&quot;urlIN&quot; value=&quot;http://services.groupkt.com/country/get/iso2code/IN&quot;/&gt;
     &lt;parameter name=&quot;urlDE&quot; value=&quot;http://services.groupkt.com/country/get/iso2code/DE&quot;/&gt;
     &lt;parameter name=&quot;urlUS&quot; value=&quot;http://services.groupkt.com/country/get/iso2code/US&quot;/&gt;
     &lt;parameter name=&quot;urlgb&quot; value=&quot;http://services.groupkt.com/country/get/iso2code/GB&quot;/&gt;
@@ -254,36 +268,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testpresenceofUSDEGB')
 data.setCell(0, 2, 'Com.HelloFresh.RestAPIHelloFresh')
-data.setCell(0, 3, 13602);
+data.setCell(0, 3, 3325);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testCountriesInList')
 data.setCell(1, 2, 'Com.HelloFresh.RestAPIHelloFresh')
-data.setCell(1, 3, 884);
+data.setCell(1, 3, 856);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testForPost')
 data.setCell(2, 2, 'Com.HelloFresh.RestAPIHelloFresh')
-data.setCell(2, 3, 649);
+data.setCell(2, 3, 621);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testUSA')
+data.setCell(3, 1, 'testGB')
 data.setCell(3, 2, 'Com.HelloFresh.RestAPIHelloFresh')
-data.setCell(3, 3, 621);
+data.setCell(3, 3, 576);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testGB')
+data.setCell(4, 1, 'testDE')
 data.setCell(4, 2, 'Com.HelloFresh.RestAPIHelloFresh')
-data.setCell(4, 3, 573);
+data.setCell(4, 3, 554);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testDE')
+data.setCell(5, 1, 'testIndia')
 data.setCell(5, 2, 'Com.HelloFresh.RestAPIHelloFresh')
-data.setCell(5, 3, 562);
+data.setCell(5, 3, 540);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testUSA')
+data.setCell(6, 2, 'Com.HelloFresh.RestAPIHelloFresh')
+data.setCell(6, 3, 522);
 window.suiteTableData['RestAPITest_Suite']= { tableData: data, tableDiv: 'times-div-RestAPITest_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-RestAPITest_Suite">
               </div> <!-- times-div-RestAPITest_Suite -->
             </div> <!-- times-div -->
@@ -316,23 +334,27 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testUSA(http://services.groupkt.com/country/get/iso2code/US)</span>
-                <span class="method-start">13617 ms</span>
+                <span class="method-start">3337 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDE(http://services.groupkt.com/country/get/iso2code/DE)</span>
-                <span class="method-start">14238 ms</span>
+                <span class="method-start">3867 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGB(http://services.groupkt.com/country/get/iso2code/GB)</span>
-                <span class="method-start">14816 ms</span>
+                <span class="method-start">4431 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testForPost(http://services.groupkt.com/country/get/all)</span>
-                <span class="method-start">15389 ms</span>
+                <span class="method-start">5010 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCountriesInList(http://services.groupkt.com/country/get/all)</span>
-                <span class="method-start">16054 ms</span>
+                <span class="method-start">5634 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testIndia(http://services.groupkt.com/country/get/iso2code/IN)</span>
+                <span class="method-start">6499 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -94,7 +94,7 @@ public class RestAPIHelloFresh
     	 System.out.println("Get Response is:" +resp.asString());
      }		   
      
-     //Get all countries and validate that US, DE and GB were returned in the response
+     //Get all countries and validate that Georgia, HongKong and India were returned in the response
      @Parameters("url")
      @Test(priority=6)
      public void testCountriesInList(String url) {
@@ -106,6 +106,19 @@ public class RestAPIHelloFresh
   		log().
   		all();	
       }
+     
+     //Get the country (IN) individually and validate the response
+     @Parameters("urlIN")
+     @Test(priority=7)
+     public void testIndia(String urlIN) {
+ 		given().
+ 		    get(urlIN).
+ 		then().
+ 		body("RestResponse.result.alpha2_code", equalTo("IN")).
+ 		statusCode(200).
+ 		log().
+ 		all();
+ 	}
   	
 }
      

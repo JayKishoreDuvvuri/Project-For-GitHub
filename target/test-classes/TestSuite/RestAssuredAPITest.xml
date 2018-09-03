@@ -2,6 +2,7 @@
 <suite name="RestAPITest Suite">
     <test name="API Test">
         <!--  Parameters for the Tests"  -->
+        <parameter name="urlIN" value="http://services.groupkt.com/country/get/iso2code/IN"></parameter>
 		<parameter name="url" value="http://services.groupkt.com/country/get/all"></parameter>
 		<parameter name="urlUS" value="http://services.groupkt.com/country/get/iso2code/US"></parameter>
 		<parameter name="urlDE" value="http://services.groupkt.com/country/get/iso2code/DE"></parameter>
