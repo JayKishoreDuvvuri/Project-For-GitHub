@@ -8,18 +8,16 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Read data and Screenshot Suite</th></tr>
-<tr><td><a href="#t0">IE Test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">241,781</td><td></td><td></td></tr>
+<tr><th colspan="7">RestAPITest Suite</th></tr>
+<tr><td><a href="#t0">API Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">16,985</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Read data and Screenshot Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">IE Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Com.HelloFresh.ScreenshotTest</td><td><a href="#m0">logInTest</a></td><td rowspan="1">1535495177117</td><td rowspan="1">205717</td></tr><tr><th colspan="4">IE Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Com.HelloFresh.ScreenshotTest</td><td><a href="#m1">LogOut</a></td><td rowspan="1">1535495382840</td><td rowspan="1">3295</td></tr><tr class="passedeven"><td><a href="#m2">setUp</a></td><td rowspan="1">1535495144393</td><td rowspan="1">32720</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RestAPITest Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">API Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">Com.HelloFresh.RestAPIHelloFresh</td><td><a href="#m0">testCountriesInList</a></td><td rowspan="1">1536002084472</td><td rowspan="1">884</td></tr><tr class="passedeven"><td><a href="#m1">testDE</a></td><td rowspan="1">1536002082656</td><td rowspan="1">562</td></tr><tr class="passedeven"><td><a href="#m2">testForPost</a></td><td rowspan="1">1536002083807</td><td rowspan="1">649</td></tr><tr class="passedeven"><td><a href="#m3">testGB</a></td><td rowspan="1">1536002083234</td><td rowspan="1">573</td></tr><tr class="passedeven"><td><a href="#m4">testUSA</a></td><td rowspan="1">1536002082035</td><td rowspan="1">621</td></tr><tr class="passedeven"><td><a href="#m5">testpresenceofUSDEGB</a></td><td rowspan="1">1536002068418</td><td rowspan="1">13602</td></tr></tbody>
 </table>
-<h2>IE Test</h2><h3 id="m0">Com.HelloFresh.ScreenshotTest#logInTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>MY ACCOUNT</td><td>Welcome to your account.</td><td>controller=my-account</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: MY ACCOUNT
-	at Com.HelloFresh.ScreenshotTest.logInTest(ScreenshotTest.java:66)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-... Removed 11 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Com.HelloFresh.ScreenshotTest#LogOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Com.HelloFresh.ScreenshotTest#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>IE</td><td>http://automationpractice.com/index.php</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>API Test</h2><h3 id="m0">Com.HelloFresh.RestAPIHelloFresh#testCountriesInList</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>http://services.groupkt.com/country/get/all</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Com.HelloFresh.RestAPIHelloFresh#testDE</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>http://services.groupkt.com/country/get/iso2code/DE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Com.HelloFresh.RestAPIHelloFresh#testForPost</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>http://services.groupkt.com/country/get/all</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Com.HelloFresh.RestAPIHelloFresh#testGB</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>http://services.groupkt.com/country/get/iso2code/GB</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Com.HelloFresh.RestAPIHelloFresh#testUSA</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>http://services.groupkt.com/country/get/iso2code/US</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Com.HelloFresh.RestAPIHelloFresh#testpresenceofUSDEGB</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>http://services.groupkt.com/country/get/all</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
