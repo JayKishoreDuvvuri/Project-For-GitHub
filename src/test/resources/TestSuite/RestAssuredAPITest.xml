@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RestAPITest Suite">
+    <test name="API Test">
+        <!--  Parameters for the Tests"  -->
+		<parameter name="url" value="http://services.groupkt.com/country/get/all"></parameter>
+		<parameter name="urlUS" value="http://services.groupkt.com/country/get/iso2code/US"></parameter>
+		<parameter name="urlDE" value="http://services.groupkt.com/country/get/iso2code/DE"></parameter>
+		<parameter name="urlgb" value="http://services.groupkt.com/country/get/iso2code/GB"></parameter>
+		<classes>
+	        <class name="Com.HelloFresh.RestAPIHelloFresh"></class> 
+	   </classes>
+   </test> 
+</suite>

@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Read data and Screenshot Suite" parallel="classes" thread-count="2">
+    <test name="IE Test">
+        <!--  Parameters for the Tests"  -->
+		<parameter name="browser" value="IE"></parameter>
+		<parameter name="url" value="http://automationpractice.com/index.php"></parameter>
+		<parameter name="account" value="MY ACCOUNT"></parameter>  
+		<parameter name="text" value="Welcome to your account."></parameter> 
+		<parameter name="urltext" value="controller=my-account"></parameter> 
+		<classes>
+	           <class name="Com.HelloFresh.ScreenshotTest"></class> 
+	           <class name="Com.HelloFresh.ReadDataFromFile"></class>   
+	   </classes>
+   </test> 
+</suite>

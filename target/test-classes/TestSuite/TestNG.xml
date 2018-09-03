@@ -1,0 +1,64 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HelloFresh Suite" parallel="tests" thread-count="3">
+
+ <test name="Chrome Test">  
+       <!--  Parameters for the Tests" -->
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="url" value="http://automationpractice.com/index.php"></parameter>
+		<parameter name="existingUserEmail" value="hf_challenge_123456@hf12345.com"></parameter>
+		<parameter name="existingUserPassword" value="12345678"></parameter>
+		<parameter name="account" value="MY ACCOUNT"></parameter>  
+		<parameter name="text" value="Welcome to your account."></parameter>
+		<parameter name="urltext" value="controller=my-account"></parameter> 
+        <parameter name="fullName" value="Joe Black"></parameter> 
+        <parameter name="orderheading" value="ORDER CONFIRMATION"></parameter>
+        <parameter name="ordertext" value="Your order on My Store is complete."></parameter> 
+        <parameter name="orderurltext" value="controller=order-confirmation"></parameter>
+
+		<classes>
+	          <class name="Com.HelloFresh.JFairySignInTest"></class>
+	          <class name="Com.HelloFresh.LogInTest"></class>     
+	          <class name="Com.HelloFresh.CheckOutTest"></class> 
+	   </classes>
+  </test> 
+  
+ <test name="Firefox Test"> 
+        <!--  Parameters for the Tests"  -->
+		<parameter name="browser" value="Firefox"></parameter>
+		<parameter name="url" value="http://automationpractice.com/index.php"></parameter>
+		<parameter name="account" value="MY ACCOUNT"></parameter>  
+		<parameter name="text" value="Welcome to your account."></parameter>
+		<parameter name="urltext" value="controller=my-account"></parameter>
+		<parameter name="existingUserEmail" value="hf_challenge_123456@hf12345.com"></parameter>
+		<parameter name="existingUserPassword" value="12345678"></parameter> 
+        <parameter name="fullName" value="Joe Black"></parameter> 
+        <parameter name="orderheading" value="ORDER CONFIRMATION"></parameter>
+        <parameter name="ordertext" value="Your order on My Store is complete."></parameter> 
+        <parameter name="orderurltext" value="controller=order-confirmation"></parameter>
+
+		<classes>
+	        <class name="Com.HelloFresh.LogInTest"></class> 
+	   </classes>
+
+   </test> 
+   
+ <test name="IE Test"> 
+        <!-- Parameters for the Tests" -->
+		<parameter name="browser" value="IE"></parameter>
+		<parameter name="url" value="http://automationpractice.com/index.php"></parameter>
+		<parameter name="account" value="MY ACCOUNT"></parameter>  
+		<parameter name="text" value="Welcome to your account."></parameter>
+		<parameter name="urltext" value="controller=my-account"></parameter>
+		<parameter name="existingUserEmail" value="hf_challenge_123456@hf12345.com"></parameter>
+		<parameter name="existingUserPassword" value="12345678"></parameter> 
+        <parameter name="fullName" value="Joe Black"></parameter> 
+        <parameter name="orderheading" value="ORDER CONFIRMATION"></parameter>
+        <parameter name="ordertext" value="Your order on My Store is complete."></parameter> 
+        <parameter name="orderurltext" value="controller=order-confirmation"></parameter>
+
+		<classes>
+	        <class name="Com.HelloFresh.LogInTest"></class> 
+	   </classes> 
+   </test>   
+
+</suite>
